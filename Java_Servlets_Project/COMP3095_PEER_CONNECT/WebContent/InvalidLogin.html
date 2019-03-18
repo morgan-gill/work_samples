@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+	<!-- This page acts as the 'Failed User Login Attempt" page -->
+	<!-- It functions identically to index.html except it has a red error message  -->
+	
+	<div align="center">
+	<h2>LOGIN</h2>
+	<p style="color:red;">* Invalid Username and/or password</p>
+	<form method="post" action="authentication"> <!-- Sends form information to the Login servlet -->
+		<strong>Username:</strong><input type="text" name="username" /> <br>
+		<strong>Password:</strong><input type="password" name="password" /> <br> <br>
+		<div class="g-recaptcha" data-sitekey="6Ld6nnQUAAAAANYSaRvz3CxMba1r7wv6Gk7TYoJv"></div> <br> <br>
+		<input type="submit" value="Login" /> <input type="submit" value="Register" formaction="Registration.html" /> <br> <br>
+		<a href="Construction.html">Forgot your Password?</a>
+	</form>
+	</div>
+
+</body>
+</html>

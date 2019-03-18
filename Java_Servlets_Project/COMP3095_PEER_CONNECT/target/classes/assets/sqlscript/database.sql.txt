@@ -1,0 +1,55 @@
+/*********************************************************************************
+* Project: < PEER_CONNECT >
+* Assignment: < Assignment 1 >
+* Author(s): < Jerome Ching, Morgan Gill, Ankur Aggarwal>
+* Student Number: < 100530184, 100566959, 101095272 >
+* Date: < October 27th, 2018 >*/
+
+
+DROP DATABASE IF EXISTS COMP3095;
+
+CREATE USER 'admin_pc'@'localhost' IDENTIFIED BY 'P@ssword1';
+GRANT ALL PRIVILEGES ON `comp3095`.* TO 'admin_pc' WITH GRANT OPTION;
+
+CREATE DATABASE IF NOT EXISTS COMP3095;
+USE COMP3095;
+grant all on COMP3095.* to 'admin'@'localhost' identified by 'admin'; 
+
+CREATE TABLE USERS 
+( 
+	id int(11) AUTO_INCREMENT PRIMARY KEY, 
+	firstname varchar(255),
+	lastname varchar(255),
+	email varchar(255), 
+	created timestamp default current_timestamp,
+	password varchar(20)
+);
+
+
+CREATE TABLE ROLES
+(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	role varchar(20)
+);
+
+CREATE TABLE USERROLES
+(
+	id int(11) auto_increment primary key,
+	user_id int(11) references users(id),
+	role_id int(11) references roles(id),
+	constraint `fk_user_id`
+	foreign key (`user_id`)
+	references `users`(`id`),
+	
+	constraint `fk_role_id`
+	foreign key (`role_id`)
+	references `roles`(`id`)
+);
+
+
+INSERT INTO `users` (`firstname`, `lastname`, `email`, `PASSWORD`) VALUES (NULL, NULL, 'admin@domain.ca', 'P@ssword1');
+
+insert into `roles` (`role`) values ('Admin');
+insert into `roles` (`role`) values ('Client');
+
+insert into `userroles` (`user_id`,`role_id`) values (1,1);

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div align="center">
+	<h2>REGISTRATION PAGE</h2>
+	<p style="color:red;">* All fields are required</p>
+	<p style="color:red;">* You must enter a valid email address</p>
+	<p style="color:red;">* The password must be between 6-24 characters in length</p>
+	<form method="post" action="Register"> <!-- Sends form information to the Register servlet -->
+		<strong>Firstname*</strong><input type="text" name="firstname" />
+		<strong>Lastname*</strong><input type="text" name="lastname" /> <br> <br>
+		<strong>Email*</strong><input type="text" name="email" /> <br> <br>
+		<strong>Password*</strong><input type="password" name="password" /> <br> <br>
+		<strong>Confirm Password*</strong><input type="password" name="confirmedpassword" /> <br> <br>
+		<input type="checkbox" name="ToS" value="ToS"> I agree to the terms of service <br> <br>
+		<input type="submit" value="Register" /> <input type="submit" value="Cancel" formaction="Login.html" />
+	</form>
+	</div>
+	
+</body>
+</html>
