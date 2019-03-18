@@ -1,0 +1,60 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: lightgrey;
+    }
+    nav {
+        width: 96%;
+        margin: auto;
+    }
+    nav table {
+        background-color: dodgerblue;
+    }
+    nav table {
+        width: 90%;
+        margin: auto;
+    }
+    nav table tr td a p {
+        text-align: center;
+        color: powderblue;
+    }
+    main {
+        width: 96%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+    }
+    main span section {
+
+    }
+    main p.tranparent {
+        position: absolute;
+        text-align: center;
+        left: 45.8%;
+        top: 50%;
+    }
+    #splash {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    section#sectionmaterials {
+        position: relative;
+        float: left;
+        left: 5%;
+    }
+    section#sectionproduction {
+        position: relative;
+        margin: auto;
+    }
+    section#sectionsources {
+        position: relative;
+        float: right;
+        right: 5%
+    }
+    footer {
+        clear: both;
+    }

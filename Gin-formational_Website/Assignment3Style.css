@@ -1,0 +1,138 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: lightgrey;
+    }
+    a:link {
+        color: blue;
+    }
+    nav {
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        z-index: 1;
+        opacity: 0.95;
+    }
+    nav table {
+        background-color: #3498db;
+        height: 50px;
+        width: 90%;
+        margin: auto;
+    }
+    nav table tr td a{
+        text-decoration: none;
+    }
+    nav table tr td.selected {
+        background-color: #2980b9;
+    }
+    nav table tr td:hover {
+        background-color: #2980b9;
+    }
+    nav table tr td a p {
+        text-align: center;
+        color: powderblue;
+        font-size: 1.2em;
+    }
+    main {
+        width: 90%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    main div {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .splash-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main h1.tranparent {
+        position: absolute;
+        text-align: center;
+        color: white;
+    }
+    #splash {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    main section div p strong {
+        font-size: 1.5em;
+    }
+    section#sectionmaterials {
+        position: relative;
+        float: left;
+        width: 32%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #888888;
+        margin-right: 2%;
+        min-height: 350px;
+    }
+    section#sectionproduction {
+        position: relative;
+        float: left;
+        width: 32%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #888888;
+        margin-right: 2%;
+        min-height: 350px;
+    }
+    section#sectionsources {
+        position: relative;
+        float: left;
+        width: 32%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #888888;
+        min-height: 350px;
+    }
+    .icebraker {
+        padding-top: 45px;
+    }
+    .h2trio {
+        text-align: left;
+    }
+    .ptrio {
+        text-align: left;
+    }
+    #materialssection01 {
+        padding-top: 4.15%;
+        min-height: 100px;
+    }
+    .materialsclass01 {
+        text-align: left;
+        border: solid black 1px;
+        min-height: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .materialsclass01 img {
+        width: 30%;
+        float: left;
+        padding-right: 1%;
+    }
+    .materialsh2 {
+        text-align: left;
+    }
+    .materialsp {
+        padding-top: 1%;
+    }
+    .xlink {
+
+    }
+    section img {
+        width: 100%;
+    }
+    footer {
+        clear: both;
+    }
