@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="10fdfdf2-33d8-49f3-bbc4-a230a13ae665" name="gblearn.com" url="http://f7566959.gblearn.com">
+        <fileTransfer host="f7566959.gblearn.com" port="21" rootFolder="/public_html/comp1230/assignment/assignment2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
